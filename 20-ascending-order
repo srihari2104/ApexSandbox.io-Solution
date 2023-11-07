@@ -2,5 +2,5 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     //code here
     if (b>=a && c>=b){
         return true;
-    }
+    } return false;
 }
