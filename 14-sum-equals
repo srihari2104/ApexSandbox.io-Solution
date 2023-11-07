@@ -3,7 +3,7 @@ public Boolean sumEquals(Integer a, Integer b, Integer c) {
     //return a + b == c;
     Integer sum = a + b;
     If(sum == c){
-        reurn true;
+        return true;
     }else {
         return false;
     }
