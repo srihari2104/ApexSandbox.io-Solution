@@ -6,7 +6,7 @@ public String registerStudent(String name, String phone, String email) {
     obj.apxio__Phone__c = phone;
 
     insert obj;
-    apxio__Student__c.apxio__Registration_Number__c regNo = [select apxio__Registration_Number__c from apxio__Student__c];
+    Integer regNo = [select apxio__Registration_Number__c from apxio__Student__c];
     return regNo;
     
 
