@@ -1,0 +1,6 @@
+public List<apxio__Student__c> selectActiveStudents() {
+    List <apxio__Student__c> stuList = [Select Id,Name,apxio__Active__c 
+                                from apxio__Student__c
+                                Where apxio__Student__c = true];
+    return stuList;
+}
