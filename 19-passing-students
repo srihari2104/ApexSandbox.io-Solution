@@ -1,20 +1,14 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
-    Integer passedConditions = 0;
+    if((passedExam && passedAssignments) == true) {
+        return true;
+    } 
+       if  ((passedExam && passedProject) || == true){
+           return true;
+       } 
+        if ((passedAssignments && passedProject) == true)){
+            return true;
+        }else 
+        return false;
 
-        if (passedExam) {
-            passedConditions++;
-        }
-        
-        if (passedAssignments) {
-            passedConditions++;
-        }
-        
-        if (passedProject) {
-            passedConditions++;
-        }
-        
-        // Check if at least two of the three conditions are true
-        return passedConditions >= 2;
-    }
-
+}
