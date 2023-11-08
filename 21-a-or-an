@@ -1,8 +1,14 @@
 public String aOrAn(String word) {
     //code here
-    if (firstLetter.startsWith('a') || firstLetter.startsWith('e') || firstLetter.startsWith('i') || firstLetter.startsWith('o') || firstLetter.startsWith('u')) {
+    if (word != null && word.length() > 0) {
+            String firstLetter = word.substring(0, 1).toLowerCase();
+            if (firstLetter.startsWith('a') || firstLetter.startsWith('e') || firstLetter.startsWith('i') || firstLetter.startsWith('o') || firstLetter.startsWith('u')) {
                 return 'an ' + word;
             } else {
                 return 'a ' + word;
             }
+        } else {
+            // Handle cases where the input is empty or null
+            return word;
+        }
 }
