@@ -9,7 +9,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c obj = new apxio__Course__c();
     obj.Name = name;
     obj.apxio__Course_Details__c = details;
-    obj.apxio__Credits__c = credits;
+    obj.apxio__Credits__c = String.valueOf(credits);;
     
         insert obj;
         return obj.Id;
