@@ -18,5 +18,6 @@ public String registerStudent(String name, String phone, String email) {
             return student.apxio__Registration_Number__c;
         } catch (DmlException e) {
             System.debug('An error occurred while registering the student: ' + e.getMessage());
+        }
           
 }
