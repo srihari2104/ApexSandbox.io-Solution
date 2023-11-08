@@ -6,7 +6,7 @@ public String registerStudent(String name, String phone, String email) {
     obj.apxio__Phone__c = phone;
 
     insert obj;
-    return obj.apxio__Registration_Number__c;
+    return null;
     
 
           
