@@ -2,9 +2,9 @@ public List<apxio__Student__c> selectUnreachableStudents() {
     List <apxio__Student__c> unReachable = [SELECT Id, Name,apxio__Email__c,apxio__Phone__c,
                                             apxio__Active__c FROM apxio__Student__c 
                                             WHERE 
-                                            apxio__Active__c = true &&
-                                            apxio__Email__c == null &&
-                                            apxio__Phone__c == null
+                                            apxio__Active__c = true AND
+                                            (apxio__Email__c == null AND
+                                            apxio__Phone__c == null)
                                             ];
     return unReachable;
 }
