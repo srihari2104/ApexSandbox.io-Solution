@@ -1,0 +1,7 @@
+public String aOrAn(String word) {
+    //code here
+    if(word startsWith(a,e,i,o,u)){
+        return 'an' + word ;
+    }else 
+    return 'a' + word;
+}
