@@ -6,8 +6,11 @@ public String registerStudent(String name, String phone, String email) {
     obj.apxio__Phone__c = phone;
 
     insert obj;
-    return obj.apxio__Registration_Number__c;
-    
-
-          
+     apxio__Student__c insertedStudent = [
+        SELECT Id, apxio__Registration_Number__c 
+        FROM apxio__Student__c
+        WHERE Id = :obj.Id
+    ];
+    return insertedStudent.apxio__Registration_Number__c;
+         
 }
