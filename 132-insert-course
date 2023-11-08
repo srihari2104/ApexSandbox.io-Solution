@@ -10,9 +10,9 @@ public Id insertCourse(String name, String details, Integer credits) {
     obj.Name = name;
     obj.apxio__Course_Details__c = details;
     obj.apxio__Credits__c = credits;
-    if(credits == (1,2,3,4)){
+    
         insert obj;
         return obj.Id;
-    }
+  
     
 }
