@@ -4,6 +4,6 @@ public String divide(Integer a, Integer b){
     return  string.valueOf(C);
     }
     catch(NullPointerException npe) {
-    System.debug('The following exception has occurred: ' + npe.getMessage());
+   return npe.getMessage());
 }
 }
