@@ -3,7 +3,7 @@ public String divide(Integer a, Integer b){
     Integer C = a / b;
     return  string.valueOf(C);
     }
-    catch(NullPointerException npe) {
-   return npe.getMessage());
+    catch(Exception e) {
+   return e.getMessage());
 }
 }
