@@ -3,7 +3,7 @@ public String divide(Integer a, Integer b){
     Integer C = a / b;
     return  string.valueOf(C);
     }
-    catch(Exception e) {
-    System.debug('The following exception has occurred: ' + e.getMessage());
+    catch(NullPointerException npe) {
+    System.debug('The following exception has occurred: ' + npe.getMessage());
 }
 }
