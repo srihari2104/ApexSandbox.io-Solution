@@ -3,7 +3,9 @@ public String convert15to18DigitId(String fifteenDigit)
     // Check if the input string length is 15 digits
         if (fifteenDigit.length() != 15) {
             return '-1';
-        } 
-       
+        }
+        if(fifteenDigit == null){
+            return null;
+        }
         return (Id)fifteenDigit ;
 }
