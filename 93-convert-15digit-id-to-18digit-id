@@ -3,11 +3,11 @@ public String convert15to18DigitId(String fifteenDigit)
     // Check if the input string length is 15 digits
         if (fifteenDigit.length() != 15) {
             return '-1';
-        }
+        }else 
 
         // Calculate the 3-character suffix based on the input string
-        //String suffix = calculateSuffix(fifteenDigit);
+        String suffix = calculateSuffix(fifteenDigit);
 
         // Return the 18-character Salesforce Id
-        //return fifteenDigit + suffix;
+        return fifteenDigit + suffix;
 }
