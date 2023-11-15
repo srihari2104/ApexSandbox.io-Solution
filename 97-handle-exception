@@ -3,7 +3,7 @@ public String divide(Integer a, Integer b){
     Integer C = a / b;
     return  string.valueOf(C);
     }
-    catch{
-        system.getMessage();
-    }
+    catch(DmlException e) {
+    System.debug('The following exception has occurred: ' + e.getMessage());
+}
 }
