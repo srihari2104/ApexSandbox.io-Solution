@@ -1,7 +1,7 @@
 public Boolean companionPlants(String plant1, String plant2) {
    
-    p3 = plant1.toLowerCase();
-    p4 = plant2.toLowerCase();
+    string p3 = plant1.toLowerCase();
+    string p4 = plant2.toLowerCase();
 
 
     list<string> x = new list<string>{'onions','lettuce','cucumbers','carrots','tomatoes'}; 
