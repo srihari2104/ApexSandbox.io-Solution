@@ -1,12 +1,12 @@
 public Boolean companionPlants(String plant1, String plant2) {
    
-    string p3 = plant1.toLowerCase();
-    string p4 = plant2.toLowerCase();
+    //string p3 = plant1.toLowerCase();
+    //string p4 = plant2.toLowerCase();
 
 
     list<string> x = new list<string>{'onions','lettuce','cucumbers','carrots','tomatoes'}; 
-    integer p1 = x.indexOf(p3);
-    integer p2 = x.indexOf(p4);
+    integer p1 = x.indexOf(plant1);
+    integer p2 = x.indexOf(plant2);
     if( ( p1 == 0 && p2 == 1 ) || 
         ( p1 == 0 && p2 == 3 ) ||
         ( p1 == 0 && p2 == 4 ) ||
