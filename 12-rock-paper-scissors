@@ -9,7 +9,7 @@ public Integer rockPaperScissors(String player1, String player2) {
 
         return 0;
 
-        } else if (p1 == 0 && p2 == 2) {
+        } else if (p1 - p2 == 1 || (p1 == 0 && p2 == 2)) {
 
         return 1;
 
