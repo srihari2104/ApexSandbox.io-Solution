@@ -1,11 +1,22 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    // Convert plant names to lowercase for case-insensitive comparison
-        plant1 = plant1.toLowerCase();
-        plant2 = plant2.toLowerCase();
+   
+    p3 = plant1.toLowerCase();
+    p4 = plant2.toLowerCase();
 
-        // Define the companion plant pairs
-        Set<String> companionPairs = new Set<String>{'lettuce-cucumbers', 'lettuce-onions', 'onions-carrots', 'onions-tomatoes'};
 
-        // Check if the given pair is in the set of companion pairs
-        return companionPairs.contains(plant1 + '-' + plant2) || companionPairs.contains(plant2 + '-' + plant1);
+    list<string> x = new list<string>{'onions','lettuce','cucumbers','carrots','tomatoes'}; 
+    integer p1 = x.indexOf(p3);
+    integer p2 = x.indexOf(p4);
+    if( ( p1 == 0 && p2 == 1 ) || 
+        ( p1 == 0 && p2 == 3 ) ||
+        ( p1 == 0 && p2 == 4 ) ||
+        ( p1 == 1 && p2 == 2 ) || 
+        ( p1 == 1 && p2 == 0 ) ||
+        ( p1 == 2 && p2 == 1 ) ||
+        ( p1 == 3 && p2 == 0 ) ||
+        ( p1 == 4 && p2 == 0 )
+        {
+        return true;
+    }else return false;
+
 }
