@@ -14,7 +14,7 @@ public Boolean companionPlants(String plant1, String plant2) {
         ( p1 == 1 && p2 == 0 ) ||
         ( p1 == 2 && p2 == 1 ) ||
         ( p1 == 3 && p2 == 0 ) ||
-        ( p1 == 4 && p2 == 0 )
+        ( p1 == 4 && p2 == 0 ))
         {
         return true;
     }else return false;
