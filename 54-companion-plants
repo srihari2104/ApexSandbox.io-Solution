@@ -2,9 +2,9 @@ public Boolean companionPlants(String plant1, String plant2) {
     list<string> x = new list<string>{'onions','lettuce','cucumbers','carrots','tomatoes'}; 
     integer p1 = x.indexOf(plant1);
     integer p2 = x.indexOf(plant2);
-    if(p1 == 0 && p2 == (1 || 3 || 4)){
+    if(p1 == 0 && (p2 == 1 || 3 || 4)){
         return true;
-    }else if (p1 == 1 && p2 == (2 || 0) ){
+    }else if (p1 == 1 && (p2 == 2 || 0) ){
         return true;
     }else if (p1 == 2 && p2 == 1  ){
         return true;
