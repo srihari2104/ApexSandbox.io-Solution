@@ -1,9 +1,24 @@
 public List<String> getNamesInAscOrder(List<String> accountNames)
 {
+     if(accountNames != null){
+
+      accountNames.sort();
+
+      return accountNames;
+
+  }
+
+  else{
+
+      return null;
+
+  }
+    /*
     if (accountNames.size() != Null){
    accountNames.sort();
    return accountNames;
     }else{
         return Null;
     }
+    */
 }
