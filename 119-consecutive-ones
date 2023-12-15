@@ -1,6 +1,6 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
     integer count=0;
-    for(n=0;n<numbers.size();n++){
+    for(integer n=0;n<numbers.size();n++){
             if(numbers[n]==1){
                //system.debug(lstNumbers[n]);
                count++; 
