@@ -1,10 +1,10 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
-    list<integer> negativeNo = new list<integer>();
+    list<integer> posituiveNo = new list<integer>();
     for(n=0;n<numbers.size();n++){
-            if(numbers[n]<0){
+            if(numbers[n]>0){
                //system.debug(numbers[n]);
-              negativeNo.add(numbers[n]);
+              posituiveNo.add(numbers[n]);
             }
         }
-        return negativeNo;
+        return posituiveNo;
 }
