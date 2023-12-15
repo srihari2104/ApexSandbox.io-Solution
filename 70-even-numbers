@@ -1,7 +1,11 @@
 public List<Integer> evenNumbers(Integer n) {
-    list<integer> evenNumbers = new list<integer>();
-    for (integer i = 2; i<n ; i++){
-        evenNumbers.add(i*2);
+     List<Integer> nums = new List<Integer>();
+
+    for (Integer i=2; i<=n * 2; i += 2) {
+
+        nums.add(i);
+
     }
-    return evenNumbers;
+
+    return nums;
 }
